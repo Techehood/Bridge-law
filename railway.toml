@@ -1,0 +1,6 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "npm install next-themes lucide-react && npm install && npx next build"
+
+[deploy]
+startCommand = "npx next start -H 0.0.0.0 -p $PORT"

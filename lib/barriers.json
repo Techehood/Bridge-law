@@ -1,0 +1,786 @@
+{
+  "version": "1.0",
+  "updated": "2026-08-10",
+  "libraries": [
+    {
+      "platform": "bookcreator",
+      "accent": "#B86B4A",
+      "barriers": [
+        {
+          "id": "BC-B1.1",
+          "context": "Stage 1: Voice & Source",
+          "type": "Language access",
+          "route": "teacher",
+          "studentWording": "I cannot work out what the words mean",
+          "triggers": [
+            "dont understand words",
+            "dialect",
+            "patois",
+            "not proper english",
+            "cant read it",
+            "confusing words",
+            "understand the poem",
+            "find the main meaning",
+            "words are too difficult"
+          ],
+          "immediateSupport": "Play the audio once more, then read only the line they name. Paraphrase that one line in plain English beside the original — never instead of it.",
+          "resources": [
+            "1.4 Language, Dialect & Voice Guide",
+            "S1 Student Toolkit §4"
+          ],
+          "lecturerIntervention": "Model one line, compare meanings, then return to the poet's wording. Hold the framing: dialect is a creative choice, not an error.",
+          "solves": "Stops the learner reading dialect as a mistake, or giving up on page one."
+        },
+        {
+          "id": "BC-B1.2",
+          "context": "Stage 1: Voice & Source",
+          "type": "Blank first response",
+          "route": "teacher",
+          "studentWording": "I do not know what to write",
+          "triggers": [
+            "dont know what to write",
+            "blank",
+            "stuck at start",
+            "nothing to say",
+            "cant start",
+            "what to write about"
+          ],
+          "immediateSupport": "Listen once more and capture ONE word only. Use a single stem: 'One word that stays with me is…'. Accept it spoken or drawn.",
+          "resources": [
+            "S1 Student Toolkit §2 (five stems)"
+          ],
+          "lecturerIntervention": "Lower the bar out loud — one word is a complete answer at this stage. Do not ask for a sentence yet.",
+          "solves": "Breaks initial inertia without demanding written fluency."
+        },
+        {
+          "id": "BC-B1.3",
+          "context": "Stage 1: Voice & Source",
+          "type": "Audio / pace access",
+          "route": "either",
+          "studentWording": "It goes too fast, or I cannot hear it properly",
+          "triggers": [
+            "too fast",
+            "cant hear",
+            "no sound",
+            "audio not working",
+            "need captions",
+            "replay"
+          ],
+          "immediateSupport": "Switch to the source text alongside the audio, or use the transcript. Pause and replay as often as needed — there is no listening limit.",
+          "resources": [
+            "Shared Core Resources > Audio",
+            "poem narration transcript"
+          ],
+          "lecturerIntervention": "Check it is a pace need, not a device fault. If no sound at all, route to technical support instead.",
+          "solves": "Separates a genuine access need from a broken speaker."
+        },
+        {
+          "id": "BC-B2.1",
+          "context": "Stage 2: Interpretation",
+          "type": "Mood / tone",
+          "route": "teacher",
+          "studentWording": "I can read it but I do not know what it feels like",
+          "triggers": [
+            "dont know the mood",
+            "what does it feel",
+            "no feeling",
+            "tone",
+            "atmosphere",
+            "describe the emotion",
+            "what feeling to use"
+          ],
+          "immediateSupport": "Replay the audio, then name three mood words only. Do not explain them yet.",
+          "resources": [
+            "2.1 / 2.2 Atmosphere Map"
+          ],
+          "lecturerIntervention": "Ask for tone, rhythm and emotional effect separately. Three words is the whole task.",
+          "solves": "Moves the learner from literal reading to emotional understanding."
+        },
+        {
+          "id": "BC-B2.2",
+          "context": "Stage 2: Interpretation",
+          "type": "Cannot reach core meaning",
+          "route": "teacher",
+          "studentWording": "I do not know what the poem is actually about",
+          "triggers": [
+            "what is it about",
+            "core meaning",
+            "dont get it",
+            "whats the point",
+            "meaning statement",
+            "find my own voice"
+          ],
+          "immediateSupport": "Answer one question in one sentence: what is this poem asking me to notice? That sentence becomes the core-meaning statement.",
+          "resources": [
+            "2.1 / 2.2 Atmosphere Map",
+            "Intent / core-meaning statement frame"
+          ],
+          "lecturerIntervention": "Hold the approval gate here. Do not let generation begin without an approved core-meaning statement.",
+          "solves": "Protects Stage 3 from unfocused prompting and wasted generation."
+        },
+        {
+          "id": "BC-B2.3",
+          "context": "Stage 2: Interpretation",
+          "type": "Two poems feel identical",
+          "route": "teacher",
+          "studentWording": "Both poems feel the same to me",
+          "triggers": [
+            "poems feel the same",
+            "no difference",
+            "both the same",
+            "cant tell apart"
+          ],
+          "immediateSupport": "Put the two atmosphere maps side by side and find one word that could only belong to one poem.",
+          "resources": [
+            "2.1 Atmosphere Map — Volcano Action",
+            "2.2 Atmosphere Map — Bang Wata Come Yah!!"
+          ],
+          "lecturerIntervention": "Sameness here usually means Stage 2 was rushed. Ask what is different about the two atmospheres before allowing Stage 3.",
+          "solves": "Prevents two identical-looking poem pages later in the book."
+        },
+        {
+          "id": "BC-B3.1",
+          "context": "Stage 3: Prompt Construction",
+          "type": "Meaning will not become a prompt",
+          "route": "teacher",
+          "studentWording": "I know what it means but I cannot turn it into an image",
+          "triggers": [
+            "cant write prompt",
+            "how do i prompt",
+            "turn into image",
+            "stuck on prompt",
+            "how to write a prompt",
+            "idea into words",
+            "which details to include"
+          ],
+          "immediateSupport": "Open the Prompt Builder and fill ONE part only: Subject. Then stop and check it against the poem before adding Setting.",
+          "resources": [
+            "Prompt Builder",
+            "Six-Part Prompt Structure (Subject · Setting · Action · Mood · Style & Lighting · Avoid)"
+          ],
+          "lecturerIntervention": "Narrow the task to one part at a time. Check each choice traces back to a line in the poem.",
+          "solves": "Converts interpretation into action without overwhelming."
+        },
+        {
+          "id": "BC-B3.2",
+          "context": "Stage 3: Prompt Construction",
+          "type": "Tempted to paste the poem",
+          "route": "teacher",
+          "studentWording": "Can I just paste the poem in?",
+          "triggers": [
+            "paste the poem",
+            "copy the poem",
+            "use the poem as prompt",
+            "whole poem"
+          ],
+          "immediateSupport": "No — the AI cannot read a poem the way you can. Name the one line driving your image, then build the prompt from that line.",
+          "resources": [
+            "Six-Part Prompt Structure",
+            "Prompt Check"
+          ],
+          "lecturerIntervention": "Show the failure case: pasted poem produces whimsical nonsense. Hold the golden rule — analyse, then decide the prompt.",
+          "solves": "Protects fidelity and stops surface-word generation."
+        },
+        {
+          "id": "BC-B3.3",
+          "context": "Stage 3: Prompt Construction",
+          "type": "Image comes out wrong",
+          "route": "teacher",
+          "studentWording": "The AI keeps giving me the wrong thing",
+          "triggers": [
+            "wrong image",
+            "not what i wanted",
+            "keeps giving",
+            "bad result",
+            "regenerate",
+            "make the right image"
+          ],
+          "immediateSupport": "Change ONE part of the six only, then regenerate. Record what changed in the Evidence Log.",
+          "resources": [
+            "Prompt Check",
+            "Image Tools",
+            "Evidence Log"
+          ],
+          "lecturerIntervention": "Enforce one-variable edits. Random regeneration teaches nothing and burns time.",
+          "solves": "Builds cause-and-effect understanding of prompting."
+        },
+        {
+          "id": "BC-B4.1",
+          "context": "Stage 4: Review & Selection",
+          "type": "Cannot choose",
+          "route": "teacher",
+          "studentWording": "I like more than one image and do not know which fits",
+          "triggers": [
+            "cant choose",
+            "which one",
+            "both good",
+            "pick between",
+            "torn",
+            "images look similar",
+            "compare them clearly"
+          ],
+          "immediateSupport": "Compare only two at a time, and ask one question of each: which stays truer to the poem?",
+          "resources": [
+            "4.1 Apply the Fidelity — Student"
+          ],
+          "lecturerIntervention": "Redirect from 'prettiest' to 'truest'. Require a pointer back to a line.",
+          "solves": "Supports justified choice rather than preference alone."
+        },
+        {
+          "id": "BC-B4.2",
+          "context": "Stage 4: Review & Selection",
+          "type": "Nothing feels right",
+          "route": "teacher",
+          "studentWording": "None of these images feel right",
+          "triggers": [
+            "none of them",
+            "nothing fits",
+            "all wrong",
+            "hate them all"
+          ],
+          "immediateSupport": "That is a real finding, not a failure. Note it in the Evidence Log and return to Stage 3 to revise one prompt part.",
+          "resources": [
+            "4.1 Apply the Fidelity — Student",
+            "Evidence Log"
+          ],
+          "lecturerIntervention": "Affirm the judgement, then send them back to Stage 3. Do not let a weak image get locked into the build.",
+          "solves": "Prevents a poor image being carried into assembly."
+        },
+        {
+          "id": "BC-B4.3",
+          "context": "Stage 4: Review & Selection",
+          "type": "Rationale is preference only",
+          "route": "teacher",
+          "studentWording": "I chose it because I liked it",
+          "triggers": [
+            "i just like it",
+            "looks nice",
+            "prettiest",
+            "no reason"
+          ],
+          "immediateSupport": "Finish this sentence instead: 'This image is true to the poem because the line ___ says ___.' Spoken is fine.",
+          "resources": [
+            "4.1 Apply the Fidelity — Student"
+          ],
+          "lecturerIntervention": "Require the poem pointer. Accept it spoken if writing is the barrier.",
+          "solves": "Turns taste into evidence-based reasoning."
+        },
+        {
+          "id": "BC-B5.1",
+          "context": "Stage 5: Assembly & Integration",
+          "type": "Page overload",
+          "route": "teacher",
+          "studentWording": "There is too much on the page",
+          "triggers": [
+            "too much",
+            "cluttered",
+            "messy page",
+            "overwhelming",
+            "too many things"
+          ],
+          "immediateSupport": "Keep only three visible elements in the first pass: poem, image, audio. Add nothing else until those sit right.",
+          "resources": [
+            "5.1 Assembly Planning Sheet",
+            "exemplar page template"
+          ],
+          "lecturerIntervention": "Point to the exact next area to fill. Remove anything non-essential before adding.",
+          "solves": "Reduces overload and unblocks the commonest Stage 5 stall."
+        },
+        {
+          "id": "BC-B5.2",
+          "context": "Stage 5: Assembly & Integration",
+          "type": "Poem formatting lost",
+          "route": "either",
+          "studentWording": "My poem has gone into one block and lost its lines",
+          "triggers": [
+            "lost line breaks",
+            "one block",
+            "formatting gone",
+            "poem looks wrong",
+            "reflowed"
+          ],
+          "immediateSupport": "Paste as plain text, then re-break the lines by hand against the source. Never leave poetry reflowed as prose.",
+          "resources": [
+            "BC_S1_Source_Text (Volcano Action / Bang Wata Come Yah!!)"
+          ],
+          "lecturerIntervention": "Check this at Stage 5, not Stage 6. Line integrity is a fidelity issue, not a cosmetic one.",
+          "solves": "Protects the poet's line breaks, stanza spacing and voice."
+        },
+        {
+          "id": "BC-B5.3",
+          "context": "Stage 5: Assembly & Integration",
+          "type": "No build order",
+          "route": "teacher",
+          "studentWording": "I do not know what to do first",
+          "triggers": [
+            "where do i start",
+            "what order",
+            "build order",
+            "which page first",
+            "finished layout"
+          ],
+          "immediateSupport": "Build one page at a time in this order: poem text, then image, then audio, then title.",
+          "resources": [
+            "5.1 Assembly Planning Sheet",
+            "Book Creator Page Copy (Draft v2)"
+          ],
+          "lecturerIntervention": "Sign off the assembly plan before building starts. This prevents rebuilds.",
+          "solves": "Gives a finite, ordered path through an open-ended task."
+        },
+        {
+          "id": "BC-B6.1",
+          "context": "Stage 6: Publish & Reflect",
+          "type": "Cannot explain choices",
+          "route": "teacher",
+          "studentWording": "I am finished but I cannot explain why I did it this way",
+          "triggers": [
+            "cant explain",
+            "dont know why",
+            "reflection",
+            "what do i write",
+            "stuck reflecting"
+          ],
+          "immediateSupport": "Use one stem per element: 'I chose this image because…', 'I chose this audio because…'. Say it out loud and record it.",
+          "resources": [
+            "6.1 40-20-40 Reflection Sheet"
+          ],
+          "lecturerIntervention": "Ask for brief explanation, not an essay. Spoken reflection counts fully.",
+          "solves": "Supports concise reflection and publish readiness."
+        },
+        {
+          "id": "BC-B6.2",
+          "context": "Stage 6: Publish & Reflect",
+          "type": "Disclosure unclear",
+          "route": "teacher",
+          "studentWording": "I do not know what to say about using AI",
+          "triggers": [
+            "disclosure",
+            "ai statement",
+            "do i say i used ai",
+            "declare",
+            "honesty",
+            "what to disclose"
+          ],
+          "immediateSupport": "State three things: what you decided, what the AI produced, what you changed afterwards.",
+          "resources": [
+            "6.2 Ethical AI Disclosure Template"
+          ],
+          "lecturerIntervention": "Frame disclosure as authorship evidence, not confession. Use the 40/20/40 split as the structure.",
+          "solves": "Makes ethical authorship concrete and non-threatening."
+        },
+        {
+          "id": "BC-B6.3",
+          "context": "Stage 6: Publish & Reflect",
+          "type": "Link or sharing fault",
+          "route": "tech",
+          "studentWording": "My link does not work / nobody can open my book",
+          "triggers": [
+            "link broken",
+            "cant open",
+            "permission",
+            "access denied",
+            "sharing not working",
+            "wont load"
+          ],
+          "immediateSupport": "Test the published link yourself in a private window before submitting.",
+          "resources": [
+            "T3 Final Resource Completion Audit"
+          ],
+          "lecturerIntervention": "This is a technical fault, not a learning barrier — route to support, then re-test.",
+          "solves": "Separates system friction from pedagogical friction."
+        }
+      ]
+    },
+    {
+      "platform": "thinglink",
+      "accent": "#6B8E5E",
+      "barriers": [
+        {
+          "id": "TL-B1.1",
+          "context": "Room 1: Voice & Source",
+          "type": "Source meaning unclear",
+          "route": "teacher",
+          "studentWording": "I can read the poem but the point is unclear",
+          "triggers": [
+            "whats the point",
+            "dont get it",
+            "why this poem",
+            "unclear",
+            "meaning",
+            "what to record"
+          ],
+          "immediateSupport": "Read the poem, then open the inspiration note beside it. The concern behind the poem is the point.",
+          "resources": [
+            "Room 1 Hotspot Copy & Link Map — Current (HS1, HS2)"
+          ],
+          "lecturerIntervention": "Explain the human issue behind the poem before any design talk begins.",
+          "solves": "Anchors Room 1 in meaning rather than novelty."
+        },
+        {
+          "id": "TL-B1.2",
+          "context": "Room 1: Voice & Source",
+          "type": "Lost in the space",
+          "route": "either",
+          "studentWording": "I do not know where to click or what to look at first",
+          "triggers": [
+            "where do i click",
+            "lost",
+            "too many hotspots",
+            "what first",
+            "cant navigate",
+            "confused room",
+            "know where to start",
+            "360",
+            "space feels overwhelming",
+            "find or access",
+            "right hotspot"
+          ],
+          "immediateSupport": "Start at the hotspot nearest the centre and work outward. You only need HS1 before moving on.",
+          "resources": [
+            "Room 1 Hotspot Copy & Link Map — Current"
+          ],
+          "lecturerIntervention": "Name the first hotspot out loud. Spatial disorientation is a design problem, not a comprehension one.",
+          "solves": "Solves the ThingLink-specific problem that has no Book Creator equivalent."
+        },
+        {
+          "id": "TL-B1.3",
+          "context": "Room 1: Voice & Source",
+          "type": "Audio / pace access",
+          "route": "either",
+          "studentWording": "It goes too fast, or I cannot hear it properly",
+          "triggers": [
+            "too fast",
+            "cant hear",
+            "no sound",
+            "captions",
+            "replay",
+            "audio"
+          ],
+          "immediateSupport": "Open the captions or transcript hotspot and follow the text while it plays.",
+          "resources": [
+            "Shared Core Resources > Audio",
+            "narration transcript"
+          ],
+          "lecturerIntervention": "Check whether it is a pace need or a device fault before intervening.",
+          "solves": "Separates a genuine access need from a broken speaker."
+        },
+        {
+          "id": "TL-B2.1",
+          "context": "Room 2: Auditory & Visual Intent",
+          "type": "Symbolism not visible",
+          "route": "teacher",
+          "studentWording": "I can see the image but I do not know why it fits",
+          "triggers": [
+            "why this image",
+            "symbolism",
+            "dont see connection",
+            "why the sea",
+            "why cafe"
+          ],
+          "immediateSupport": "Replay the audio and read the symbolism note at the same time. Ask what is close and what is far away.",
+          "resources": [
+            "TL Room 2 HS1, HS2 (music reasoning + hero image symbolism notes)"
+          ],
+          "lecturerIntervention": "Model the link between sound, image and emotional distance explicitly.",
+          "solves": "Helps learners who can see an image but not read it."
+        },
+        {
+          "id": "TL-B2.2",
+          "context": "Room 2: Auditory & Visual Intent",
+          "type": "Sound-to-mood gap",
+          "route": "teacher",
+          "studentWording": "I do not understand why that music was chosen",
+          "triggers": [
+            "why this music",
+            "soundtrack",
+            "music choice",
+            "why soothing",
+            "supposed to feel",
+            "sounds seem the same",
+            "describe what i hear"
+          ],
+          "immediateSupport": "Listen once with eyes closed, then name what the music does that the words do not.",
+          "resources": [
+            "TL Room 2 HS1 (music reasoning note)"
+          ],
+          "lecturerIntervention": "Point out that soothing music can still carry distance. Tone is a decision, not decoration.",
+          "solves": "Connects auditory intent to emotional meaning."
+        },
+        {
+          "id": "TL-B2.3",
+          "context": "Room 2: Auditory & Visual Intent",
+          "type": "Sensory overload",
+          "route": "either",
+          "studentWording": "The 360 view is too much for me",
+          "triggers": [
+            "too much movement",
+            "dizzy",
+            "overwhelming",
+            "spinning",
+            "sensory",
+            "motion"
+          ],
+          "immediateSupport": "Stop moving the view. Stay on one still section and use the text hotspots instead.",
+          "resources": [
+            "TL Room 2 static hero image",
+            "source text"
+          ],
+          "lecturerIntervention": "Offer the flat/text route as an equal path, not a lesser one. Do not require 360 navigation.",
+          "solves": "Removes a genuine access barrier unique to immersive platforms."
+        },
+        {
+          "id": "TL-B3.1",
+          "context": "Room 3: Prompt Construction",
+          "type": "Prompt overload",
+          "route": "teacher",
+          "studentWording": "I do not know what to put in the prompt",
+          "triggers": [
+            "what goes in the prompt",
+            "dont know what to write",
+            "prompt help",
+            "too many ideas",
+            "how to write a prompt",
+            "image in my head",
+            "tools are confusing"
+          ],
+          "immediateSupport": "One scene, one mood, one symbol. Nothing else goes in this prompt.",
+          "resources": [
+            "3.1 Prompt Builder Sheet",
+            "Six-Part Prompt Structure"
+          ],
+          "lecturerIntervention": "Reduce to a single-scene brief. A whole story will not render as one image.",
+          "solves": "Prevents overcrowded, incoherent prompt writing."
+        },
+        {
+          "id": "TL-B3.2",
+          "context": "Room 3: Prompt Construction",
+          "type": "Tempted to paste the poem",
+          "route": "teacher",
+          "studentWording": "Can I just paste the poem in?",
+          "triggers": [
+            "paste the poem",
+            "copy the poem",
+            "whole poem",
+            "use poem as prompt"
+          ],
+          "immediateSupport": "No — name the one line driving your image, then build the prompt from that line.",
+          "resources": [
+            "Six-Part Prompt Structure",
+            "Prompt Check"
+          ],
+          "lecturerIntervention": "Show the failure case, then return to the keyword bank.",
+          "solves": "Protects fidelity and stops surface-word generation."
+        },
+        {
+          "id": "TL-B3.3",
+          "context": "Room 3: Prompt Construction",
+          "type": "No keywords to start from",
+          "route": "teacher",
+          "studentWording": "I cannot find the right words from the poem",
+          "triggers": [
+            "no keywords",
+            "cant find words",
+            "keyword bank",
+            "which words",
+            "know where to start"
+          ],
+          "immediateSupport": "Pull five words only: what you see, hear, and feel. Stop at five.",
+          "resources": [
+            "TL Room 3 HS1 keyword bank"
+          ],
+          "lecturerIntervention": "Model reading-to-keyword transfer on one stanza, then hand it back.",
+          "solves": "Gives a concrete first step when prompting feels abstract."
+        },
+        {
+          "id": "TL-B4.1",
+          "context": "Room 4: Review & Selection",
+          "type": "Chose on preference",
+          "route": "teacher",
+          "studentWording": "I just picked the nicest image",
+          "triggers": [
+            "i just like it",
+            "nicest",
+            "looks best",
+            "prettiest",
+            "no reason",
+            "images look the same",
+            "which one to pick",
+            "forgot what feeling",
+            "too many choices"
+          ],
+          "immediateSupport": "Put your choice beside one you rejected and name what is gained and what is lost.",
+          "resources": [
+            "TL Room 4 Fidelity Review Sheet"
+          ],
+          "lecturerIntervention": "Ask what emotional or symbolic detail changes between the two options.",
+          "solves": "Improves image judgement and justification."
+        },
+        {
+          "id": "TL-B4.2",
+          "context": "Room 4: Review & Selection",
+          "type": "Cannot justify rejection",
+          "route": "teacher",
+          "studentWording": "I do not know how to say why I rejected one",
+          "triggers": [
+            "why rejected",
+            "cant explain rejection",
+            "reject reason"
+          ],
+          "immediateSupport": "Say what the image added that the poem never asked for. That is your reason.",
+          "resources": [
+            "TL Room 4 Fidelity Review Sheet",
+            "HS3 rejected image notes"
+          ],
+          "lecturerIntervention": "Model rejection as fidelity work, not failure.",
+          "solves": "Makes rejection a reasoned, teachable act."
+        },
+        {
+          "id": "TL-B4.3",
+          "context": "Room 4: Review & Selection",
+          "type": "Nothing fits",
+          "route": "teacher",
+          "studentWording": "None of these images feel right",
+          "triggers": [
+            "none fit",
+            "nothing works",
+            "all wrong",
+            "start again"
+          ],
+          "immediateSupport": "That is a real finding. Return to Room 3 and change one prompt part only.",
+          "resources": [
+            "TL Room 4 Fidelity Review Sheet"
+          ],
+          "lecturerIntervention": "Affirm the judgement, then route back to Room 3.",
+          "solves": "Prevents a weak image entering the assembled room."
+        },
+        {
+          "id": "TL-B5.1",
+          "context": "Room 5: Assembly & Integration",
+          "type": "Hotspot order unclear",
+          "route": "teacher",
+          "studentWording": "There are too many hotspots and I do not know the order",
+          "triggers": [
+            "too many hotspots",
+            "what order",
+            "where first",
+            "hotspot overload",
+            "sequence",
+            "too much on the page",
+            "crowded",
+            "messy"
+          ],
+          "immediateSupport": "Place only the first three hotspots, in the order a visitor should meet them. Nothing else yet.",
+          "resources": [
+            "Hotspot map (in ThingLink Hotspot Copy — Rooms 2–6)",
+            "audience path note"
+          ],
+          "lecturerIntervention": "Point to hotspot one, then two, then three. Sequence before quantity.",
+          "solves": "Solves the main Unit 5 assembly problem in ThingLink."
+        },
+        {
+          "id": "TL-B5.2",
+          "context": "Room 5: Assembly & Integration",
+          "type": "Unclear what belongs together",
+          "route": "teacher",
+          "studentWording": "I do not know what should go in one hotspot",
+          "triggers": [
+            "what goes together",
+            "one hotspot",
+            "group",
+            "bundle",
+            "which resources",
+            "finished layout"
+          ],
+          "immediateSupport": "One hotspot answers one question. If it answers two, split it.",
+          "resources": [
+            "TL Room 5 HS2 media package by hotspot"
+          ],
+          "lecturerIntervention": "Check coherence inside a single hotspot before looking at the whole room.",
+          "solves": "Stops hotspots becoming dumping grounds."
+        },
+        {
+          "id": "TL-B5.3",
+          "context": "Room 5: Assembly & Integration",
+          "type": "Media will not place or play",
+          "route": "tech",
+          "studentWording": "My image or audio will not load into the hotspot",
+          "triggers": [
+            "wont upload",
+            "not loading",
+            "cant place",
+            "file too big",
+            "wont play",
+            "embed failed"
+          ],
+          "immediateSupport": "Check the file size and format first, then re-add the media to the hotspot.",
+          "resources": [
+            "Master Asset Register (file locations)"
+          ],
+          "lecturerIntervention": "This is a technical fault — route to support rather than teaching into it.",
+          "solves": "Separates system friction from pedagogical friction."
+        },
+        {
+          "id": "TL-B6.1",
+          "context": "Room 6: Publication & Reflection",
+          "type": "Not sure it is ready",
+          "route": "teacher",
+          "studentWording": "I am not sure this is ready to publish",
+          "triggers": [
+            "is it ready",
+            "ready to publish",
+            "finished",
+            "good enough",
+            "check my work"
+          ],
+          "immediateSupport": "Run the audit checklist rather than guessing. If every line passes, it is ready.",
+          "resources": [
+            "T3 Final Resource Completion Audit"
+          ],
+          "lecturerIntervention": "Use the checklist as sign-off. Replace 'does it feel done' with 'does it pass'.",
+          "solves": "Supports confident final publication."
+        },
+        {
+          "id": "TL-B6.2",
+          "context": "Room 6: Publication & Reflection",
+          "type": "Cannot write reflection",
+          "route": "teacher",
+          "studentWording": "I do not know what to say in my reflection",
+          "triggers": [
+            "reflection",
+            "what do i write",
+            "cant explain",
+            "dont know what to say",
+            "what to say about ai"
+          ],
+          "immediateSupport": "One sentence per choice: image, sound, order. Record it spoken if that is easier.",
+          "resources": [
+            "6.1 40-20-40 Reflection Sheet"
+          ],
+          "lecturerIntervention": "Brief and specific beats long and general. Spoken reflection counts fully.",
+          "solves": "Makes reflection finite and achievable."
+        },
+        {
+          "id": "TL-B6.3",
+          "context": "Room 6: Publication & Reflection",
+          "type": "Share link fault",
+          "route": "tech",
+          "studentWording": "My share link does not work",
+          "triggers": [
+            "link broken",
+            "cant share",
+            "permission",
+            "private",
+            "wont open",
+            "access denied"
+          ],
+          "immediateSupport": "Test the published link yourself in a private window before submitting.",
+          "resources": [
+            "T3 Final Resource Completion Audit"
+          ],
+          "lecturerIntervention": "Technical fault — route to support, then re-test the link.",
+          "solves": "Separates system friction from pedagogical friction."
+        }
+      ]
+    }
+  ]
+}
