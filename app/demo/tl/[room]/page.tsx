@@ -7,7 +7,7 @@
  * that ThingLink's iframe/window points at, plus the Bridge launcher.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { HelpCircle } from "lucide-react";
 import DemoBridge from "@/app/components/DemoBridge";
@@ -18,6 +18,11 @@ export default function DemoThingLinkRoomPage() {
   const raw = String(params.room ?? "");
   const roomKey = raw === "1" ? "room1" : raw === "2" ? "room2" : null;
   const [bridgeOpen, setBridgeOpen] = useState(false);
+
+  // "?bridge=open" reopens the Bridge straight away (used by the Return to your results link)
+  useEffect(() => {
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("bridge") === "open") setBridgeOpen(true);
+  }, []);
 
   if (!roomKey) {
     return <div className="p-8 text-[#2D2730]">Unknown room. Valid rooms: 1, 2.</div>;
@@ -48,6 +53,16 @@ export default function DemoThingLinkRoomPage() {
         >
           <HelpCircle size={20} /> Open The Bridge — flag an issue
         </button>
+
+        {roomKey === "room2" && (
+          <button
+            onClick={() => setBridgeOpen(true)}
+            className="block px-6 py-4 rounded-2xl font-bold border-2"
+            style={{ borderColor: "#6B8E5E", color: "#2D2730" }}
+          >
+            Return to your results
+          </button>
+        )}
       </div>
 
       <DemoBridge

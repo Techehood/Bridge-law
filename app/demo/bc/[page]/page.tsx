@@ -7,7 +7,7 @@
  * page's content plus the Bridge launcher for notes/issue-flagging.
  */
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import { HelpCircle } from "lucide-react";
 import DemoBridge from "@/app/components/DemoBridge";
@@ -20,6 +20,10 @@ export default function DemoBookCreatorPage() {
   const raw = String(params.page ?? "");
   const pageKey = (VALID as readonly string[]).includes(raw) ? (`page${raw}` as keyof typeof BC_PAGES) : null;
   const [bridgeOpen, setBridgeOpen] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && new URLSearchParams(window.location.search).get("bridge") === "open") setBridgeOpen(true);
+  }, []);
 
   if (!pageKey) {
     return <div className="p-8 text-[#2D2730]">Unknown page. Valid pages: 1–4.</div>;
@@ -57,6 +61,16 @@ export default function DemoBookCreatorPage() {
         >
           <HelpCircle size={20} /> Open The Bridge — flag an issue
         </button>
+
+        {pageKey === "page4" && (
+          <button
+            onClick={() => setBridgeOpen(true)}
+            className="block px-6 py-4 rounded-2xl font-bold border-2"
+            style={{ borderColor: "#B86B4A", color: "#2D2730" }}
+          >
+            Return to your results
+          </button>
+        )}
       </div>
 
       <DemoBridge
