@@ -163,8 +163,10 @@ export default function DemoBridge({ platform, contextLabel, isOpen, onClose }: 
     const a = document.createElement("a");
     a.href = url;
     a.download = `my-learning-summary-${groupCode}.txt`;
-    a.click();
-    URL.revokeObjectURL(url);
+      document.body.appendChild(a);
+   a.click();
+   document.body.removeChild(a);
+   setTimeout(() => URL.revokeObjectURL(url), 1000);
   }
 
   // The host page (app/demo/tl/[room] or app/demo/bc/[page]) owns its own
